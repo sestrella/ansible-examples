@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - authorized_key:
+        user: "{{ ansible_user }}"
+        key: https://github.com/sestrella.keys
